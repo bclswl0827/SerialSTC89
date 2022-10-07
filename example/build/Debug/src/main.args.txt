@@ -1,0 +1,1 @@
+-c --std-c2x -Isrc -Isrc/components -Iinc -Iinc/components -mmcs51 --opt-code-size --iram-size 256 --xram-size 0 --code-size 8192 -MMD -o ./build/Debug/src/main.rel ./src/main.c

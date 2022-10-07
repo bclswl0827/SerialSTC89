@@ -1,0 +1,69 @@
+{
+    "name": "example",
+    "target": "Debug",
+    "toolchain": "SDCC",
+    "toolchainLocation": "/home/yuki/.platformio/packages/toolchain-sdcc",
+    "toolchainCfgFile": "../cfg/sdcc.model.json",
+    "buildMode": "fast|multhread",
+    "showRepathOnLog": true,
+    "threadNum": 8,
+    "rootDir": "/home/yuki/桌面/example",
+    "dumpPath": "build/Debug",
+    "outDir": "build/Debug",
+    "incDirs": [
+        "src",
+        "src/components",
+        "inc",
+        "inc/components"
+    ],
+    "libDirs": [],
+    "defines": [],
+    "sourceList": [
+        "src/components/delay.c",
+        "src/components/ttl.c",
+        "src/main.c"
+    ],
+    "sourceParams": {},
+    "sourceParamsMtime": 1663694433013.116,
+    "options": {
+        "version": 3,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [],
+        "global": {
+            "device": "mcs51",
+            "optimize-type": "size",
+            "misc-controls": "--iram-size 256 --xram-size 0 --code-size 8192"
+        },
+        "c/cpp-compiler": {
+            "language-c": "c2x"
+        },
+        "asm-compiler": {
+            "$toolName": "sdas8051"
+        },
+        "linker": {
+            "$mainFileName": "main",
+            "output-format": "hex"
+        }
+    },
+    "env": {
+        "workspaceFolder": "/home/yuki/桌面/example",
+        "workspaceFolderBasename": "example",
+        "OutDir": "/home/yuki/桌面/example/build/Debug",
+        "OutDirRoot": "build",
+        "OutDirBase": "build/Debug",
+        "ProjectName": "example",
+        "ConfigName": "Debug",
+        "ProjectRoot": "/home/yuki/桌面/example",
+        "ExecutableName": "/home/yuki/桌面/example/build/Debug/example",
+        "ToolchainRoot": "/home/yuki/.platformio/packages/toolchain-sdcc"
+    },
+    "sha": {
+        "c/cpp-defines": "d751713988987e9331980363e24189ce",
+        "beforeBuildTasks": "d751713988987e9331980363e24189ce",
+        "afterBuildTasks": "d751713988987e9331980363e24189ce",
+        "global": "7a28a814299de1f6007b6ef358d4a0bb",
+        "c/cpp-compiler": "116e475da1cea5c78d6e6c4b44ee3d5d",
+        "asm-compiler": "ed0cbf2f00f079904d4f634eb986c327",
+        "linker": "d9e14929ad9416d382e45b49ec9fbdcf"
+    }
+}
