@@ -6,8 +6,8 @@ Test passed on [EIDE](https://github.com/github0null/eide) and [SDCC](https://sd
 
 ## Build on VSCode with EIDE
 
-![Build]("https://raw.githubusercontent.com/bclswl0827/SerialSTC89/master/screenshots/1.png")
+![Build](https://github.com/bclswl0827/SerialSTC89/blob/master/screenshots/1.png)
 
 ## Serial Output
 
-![Output]("https://raw.githubusercontent.com/bclswl0827/SerialSTC89/master/screenshots/2.png")
+![Build](https://github.com/bclswl0827/SerialSTC89/blob/master/screenshots/2.png)
