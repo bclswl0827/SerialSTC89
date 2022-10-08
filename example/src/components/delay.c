@@ -3,8 +3,8 @@
 // 延时函数，单位 ms
 void delay(uint16_t t) {
     uint16_t i, j;
-    for (i = 0; i < t; i++) {
-        for (j = 0; j < 60; j++) {
+    for (i = t; i > 0; i--) {
+        for (j = 112; j > 0; j--) {
             ;
         }
     }
