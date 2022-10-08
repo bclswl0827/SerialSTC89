@@ -5,9 +5,9 @@
 #include <stdint.h>
 
 // 延时函数，单位 ms
-void delay(uint64_t t);
+void delay(uint16_t t);
 
 // 延时函数，单位 us
-void delayMicroseconds(uint64_t t);
+void delayMicroseconds(uint16_t t);
 
 #endif

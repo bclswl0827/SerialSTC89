@@ -5,7 +5,7 @@
 #define CRYSTAL 11059200L
 
 // 初始化串口
-void SerialBegin(uint32_t b) {
+void SerialBegin(uint16_t b) {
     // 波特率加倍
     PCON = 0x80;
     // 八位数据模式
@@ -25,7 +25,7 @@ void SerialEnd() {
 }
 
 // 等待串行数据的最大时间，单位毫秒
-void SerialSetTimeout(uint32_t t) {
+void SerialSetTimeout(uint16_t t) {
     // 设定定时器 0 为 16 位自动重装模式
     TMOD = 0x01;
     // 设定自动重装值，定时时间

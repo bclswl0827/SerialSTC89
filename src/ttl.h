@@ -6,11 +6,11 @@
 #include <ttl.c>
 
 // 初始化串口
-void SerialBegin(uint32_t b);
+void SerialBegin(uint16_t b);
 // 结束串口
 void SerialEnd();
 // 等待串行数据的最大时间，单位毫秒
-void SerialSetTimeout(uint32_t t);
+void SerialSetTimeout(uint16_t t);
 // 等待串口数据发送完成
 void SerialWait();
 // 串口发送单个字符
@@ -28,8 +28,8 @@ uint8_t putchar(uint8_t c);
 
 // 透过 struct 模拟实现 class
 typedef struct {
-    void (*begin)(uint32_t b);
-    void (*setTimeout)(uint32_t t);
+    void (*begin)(uint16_t b);
+    void (*setTimeout)(uint16_t t);
     void (*flush)(void);
     void (*end)(void);
     void (*print)(char* s);

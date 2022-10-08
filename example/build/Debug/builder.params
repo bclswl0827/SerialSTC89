@@ -1,13 +1,13 @@
 {
-    "name": "example",
+    "name": "GPS-Simulator",
     "target": "Debug",
     "toolchain": "SDCC",
     "toolchainLocation": "/home/yuki/.platformio/packages/toolchain-sdcc",
     "toolchainCfgFile": "../cfg/sdcc.model.json",
-    "buildMode": "fast|multhread",
+    "buildMode": "normal|multhread",
     "showRepathOnLog": true,
     "threadNum": 8,
-    "rootDir": "/home/yuki/桌面/example",
+    "rootDir": "/home/yuki/SerialSTC89/example",
     "dumpPath": "build/Debug",
     "outDir": "build/Debug",
     "incDirs": [
@@ -24,7 +24,7 @@
         "src/main.c"
     ],
     "sourceParams": {},
-    "sourceParamsMtime": 1663694433013.116,
+    "sourceParamsMtime": 1664351243819.432,
     "options": {
         "version": 3,
         "beforeBuildTasks": [],
@@ -32,10 +32,11 @@
         "global": {
             "device": "mcs51",
             "optimize-type": "size",
-            "misc-controls": "--iram-size 256 --xram-size 0 --code-size 8192"
+            "misc-controls": "--iram-size 256 --xram-size 0 --code-size 8192",
+            "out-debug-info": true
         },
         "c/cpp-compiler": {
-            "language-c": "c2x"
+            "language-c": "sdcc11"
         },
         "asm-compiler": {
             "$toolName": "sdas8051"
@@ -46,23 +47,23 @@
         }
     },
     "env": {
-        "workspaceFolder": "/home/yuki/桌面/example",
+        "workspaceFolder": "/home/yuki/SerialSTC89/example",
         "workspaceFolderBasename": "example",
-        "OutDir": "/home/yuki/桌面/example/build/Debug",
+        "OutDir": "/home/yuki/SerialSTC89/example/build/Debug",
         "OutDirRoot": "build",
         "OutDirBase": "build/Debug",
-        "ProjectName": "example",
+        "ProjectName": "GPS-Simulator",
         "ConfigName": "Debug",
-        "ProjectRoot": "/home/yuki/桌面/example",
-        "ExecutableName": "/home/yuki/桌面/example/build/Debug/example",
+        "ProjectRoot": "/home/yuki/SerialSTC89/example",
+        "ExecutableName": "/home/yuki/SerialSTC89/example/build/Debug/GPS-Simulator",
         "ToolchainRoot": "/home/yuki/.platformio/packages/toolchain-sdcc"
     },
     "sha": {
         "c/cpp-defines": "d751713988987e9331980363e24189ce",
         "beforeBuildTasks": "d751713988987e9331980363e24189ce",
         "afterBuildTasks": "d751713988987e9331980363e24189ce",
-        "global": "7a28a814299de1f6007b6ef358d4a0bb",
-        "c/cpp-compiler": "116e475da1cea5c78d6e6c4b44ee3d5d",
+        "global": "b08f85a51063ee31079724eea2ab81ba",
+        "c/cpp-compiler": "5074ce178a206c5f0936894be2342968",
         "asm-compiler": "ed0cbf2f00f079904d4f634eb986c327",
         "linker": "d9e14929ad9416d382e45b49ec9fbdcf"
     }
